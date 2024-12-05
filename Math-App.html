@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematik Spil</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Spiller 1 (øverst, til venstre) -->
+        <div class="player-section rotate-180">
+          <div class="player-number">Spiller 1</div>
+          <button class="help-button top-left">?</button>
+          <div class="math-problem">
+            <div class="problem-text"></div>
+            <input type="number" class="answer-input" placeholder="Svar">
+            <div class="feedback"></div>
+          </div>
+        </div>
+        <!-- Spiller 2 (øverst, til højre) -->
+        <div class="player-section rotate-180">
+          <div class="player-number">Spiller 2</div>
+          <button class="help-button top-right">?</button>
+          <div class="math-problem">
+            <div class="problem-text"></div>
+            <input type="number" class="answer-input" placeholder="Svar">
+            <div class="feedback"></div>
+          </div>
+        </div>
+        <!-- Spiller 3 (nederst, til venstre) -->
+        <div class="player-section">
+          <div class="player-number">Spiller 3</div>
+          <button class="help-button bottom-left">?</button>
+          <div class="math-problem">
+            <div class="problem-text"></div>
+            <input type="number" class="answer-input" placeholder="Svar">
+            <div class="feedback"></div>
+          </div>
+        </div>
+        <!-- Spiller 4 (nederst, til højre) -->
+        <div class="player-section">
+          <div class="player-number">Spiller 4</div>
+          <button class="help-button bottom-right">?</button>
+          <div class="math-problem">
+            <div class="problem-text"></div>
+            <input type="number" class="answer-input" placeholder="Svar">
+            <div class="feedback"></div>
+          </div>
+        </div>
+      </div>
+      
+
+  <!-- Timer, score og start knap i midten -->
+  <div class="timer-container">
+      <button class="start-button">Start Spil</button>
+      <svg class="progress-ring" width="150" height="150">
+          <circle
+              class="progress-ring-circle"
+              stroke="#4CAF50"
+              stroke-width="8"
+              fill="transparent"
+              r="70"
+              cx="75"
+              cy="75"
+          ></circle>
+      </svg>
+      <div class="score-display">0</div>
+  </div>
+
+  <script src="task-manager.js"></script>
+</body>
+</html>
