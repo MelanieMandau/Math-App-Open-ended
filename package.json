@@ -1,0 +1,11 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Math app",
+  "main": "Task-Manager.js",
+  "scripts": {
+    "start": "node Task-Manager.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
